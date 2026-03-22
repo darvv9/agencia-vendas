@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logoImg from "./images/logo.png";
 
 export default function Home() {
   const year = new Date().getFullYear();
@@ -10,12 +11,10 @@ export default function Home() {
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-8 flex justify-center bg-transparent">
               <Image
-                src="/logo.png"
+                src={logoImg}
                 alt="Tá Online"
-                width={800}
-                height={300}
                 priority
-                sizes="(max-width: 768px) 100vw, 800px"
+                placeholder="blur"
                 className="logo-header h-auto w-auto max-w-full"
               />
             </div>
