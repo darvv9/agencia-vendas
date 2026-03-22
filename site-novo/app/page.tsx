@@ -159,6 +159,111 @@ export default function Home() {
         </div>
       </section>
 
+      <section
+        id="investimento"
+        className="relative border-y border-white/10 bg-zinc-950 px-4 py-20 sm:px-0"
+      >
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+              Investir em Presença de Alto Nível
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-300">
+              Soluções para profissionais e negócios que exigem alta
+              performance, credibilidade instantânea e conversão real.
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            <div className="group relative overflow-hidden rounded-xl border border-cyan-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-cyan-500/30">
+              <div
+                className="pointer-events-none absolute inset-0 rounded-xl border border-cyan-400/20 opacity-60 blur-lg transition group-hover:opacity-80"
+                style={{ filter: "drop-shadow(0 0 21px #06b6d4)" }}
+              />
+              <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
+                Presença Digital de Autoridade
+              </h3>
+              <p className="relative z-10 mb-5 text-zinc-300">
+                Landing Pages premium desenhadas para quem investe pesado em
+                tráfego e deseja conquistar leads de alto ticket. Design
+                exclusivo, copywriting persuasivo e performance inigualável
+                para resultados imediatos.
+              </p>
+              <span className="relative z-10 inline-block rounded bg-cyan-500/10 px-3 py-1 text-xs font-medium tracking-wide text-cyan-300 uppercase">
+                Exclusivo para quem busca alta conversão
+              </span>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl border border-emerald-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-emerald-400/30">
+              <div
+                className="pointer-events-none absolute inset-0 rounded-xl border border-emerald-400/20 opacity-60 blur-lg transition group-hover:opacity-80"
+                style={{ filter: "drop-shadow(0 0 21px #34d399)" }}
+              />
+              <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
+                Ecossistema de Vendas Completo
+              </h3>
+              <p className="relative z-10 mb-5 text-zinc-300">
+                Sites institucionais robustos, rápidos, com estrutura que
+                transmite confiança desde o primeiro acesso. Foco em trajetória
+                de credibilidade, segurança e autoridade para seu negócio
+                prosperar.
+              </p>
+              <span className="relative z-10 inline-block rounded bg-emerald-500/10 px-3 py-1 text-xs font-medium tracking-wide text-emerald-300 uppercase">
+                Segurança & Performance
+              </span>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl border border-fuchsia-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-fuchsia-400/30">
+              <div
+                className="pointer-events-none absolute inset-0 rounded-xl border border-fuchsia-400/20 opacity-60 blur-lg transition group-hover:opacity-80"
+                style={{ filter: "drop-shadow(0 0 21px #d946ef)" }}
+              />
+              <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
+                Engenharia Sob Medida
+              </h3>
+              <p className="relative z-10 mb-5 text-zinc-300">
+                Desenvolvimento de sistemas personalizados e soluções complexas.
+                Projetos desenhados do zero para necessidades específicas —
+                tecnologia, automação e diferenciação, sempre entrega única e
+                propriedade total.
+              </p>
+              <span className="relative z-10 inline-block rounded bg-fuchsia-500/10 px-3 py-1 text-xs font-medium tracking-wide text-fuchsia-300 uppercase">
+                Solução Exclusiva
+              </span>
+            </div>
+          </div>
+          <div className="mt-16 flex flex-col items-center">
+            <div className="flex max-w-2xl flex-col items-center rounded-lg border border-cyan-400/20 bg-zinc-900/80 px-8 py-6 shadow shadow-cyan-500/10">
+              <span className="mb-2 text-base font-bold tracking-wider text-cyan-400 uppercase">
+                Consultoria Flexível
+              </span>
+              <p className="mb-4 text-center text-zinc-200">
+                Compreendemos que negócios de elite possuem necessidades únicas.
+                Cada orçamento é planejado após uma análise estratégica e
+                consultiva, garantindo a melhor solução para o seu cenário.
+              </p>
+              <div className="flex w-full flex-col justify-center gap-4 sm:flex-row">
+                <a
+                  href="https://wa.me/5511978481415"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-cyan-400 px-7 py-4 text-base font-semibold text-black shadow-sm shadow-cyan-500/40 transition-all hover:bg-cyan-300 hover:shadow-lg"
+                >
+                  Agendar Consultoria Estratégica
+                </a>
+                <a
+                  href="mailto:atendimento@agenciataonline.com.br?subject=Solicitar%20Orçamento%20Exclusivo"
+                  className="rounded-lg border border-cyan-400 bg-zinc-950/70 px-7 py-4 text-base font-semibold text-cyan-300 transition-all hover:bg-cyan-400/10"
+                >
+                  Solicitar Orçamento Exclusivo
+                </a>
+              </div>
+              <div className="mt-6 text-center text-xs tracking-tight text-zinc-400 italic">
+                Entrega única, sem mensalidades. O código é seu, pertence à sua
+                empresa.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-surface border-white/5 border-t py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
@@ -220,151 +325,3 @@ export default function Home() {
     </>
   );
 }
-/**
- * Verificação e Ajuste de Estilos no Next.js com Tailwind
- *
- * 1. Certifique-se de que o arquivo `tailwind.config.js` existe na raiz do projeto.
- * 2. O correto funcionamento das classes Tailwind depende deste arquivo + do import em `globals.css`.
- * 3. O Next.js pode incluir estilos padrões que afetam o layout, especialmente do arquivo `app/globals.css` ou do próprio React/Next.
- * 4. Para forçar o visual idêntico ao do seu antigo index.html, remova estilos indesejados globais
- *    e replique o que usava antes via Tailwind.
- *
- * Exemplo de reset para garantir estilo limpo (adicione em globals.css):
- *
- * :root, html, body {
- *   @apply bg-black text-white min-h-screen h-full w-full p-0 m-0;
- *   font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
- * }
- *
- * body {
- *   @apply antialiased;
- * }
- *
- * html {
- *   @apply h-full;
- * }
- *
- * 5. Remova ou edite quaisquer classes globais default que não queira.
- *
- * 6. Em `site-novo/app/layout.tsx`, se existir `className="h-full"`, mantenha.
- *
- * 7. No seu código principal, todos os elementos já estão usando Tailwind (`bg-black`, `text-white`, etc).
- *    O problema de "layout gigante e preto" normalmente está relacionado à falta de reset em html/body e de limite de largura (max-w-*)
- *
- * 8. Exemplo de como seria seu arquivo index.html antigo convertido para Tailwind:
- *
- * <body class="bg-black text-white min-h-screen antialiased [font-family:Inter,sans-serif]">
- *   <!-- ... -->
- * </body>
- *
- * 9. Não há código a ser gerado em page.tsx diretamente, apenas ajuste seu `globals.css` conforme acima,
- *    e certifique-se de que suas classes Tailwind estão presentes e que o Tailwind está funcionando.
- *
- * 10. Se o projeto não está refletindo as classes tailwind, verifique:
- *    - Se tailwind.config.js existe na raiz.
- *    - Se `app/globals.css` importa o Tailwind (`@tailwind base; ...`)
- *    - Se há sobrescrita de css pelo Next padrão.
- *    - Se o build do Next está pegando o CSS certo.
- *
- * 11. Para garantir que Tailwind está funcionando, adicione temporariamente em qualquer elemento:
- *      <div className="bg-pink-500 p-8">Teste Tailwind!</div>
- *     Se aparecer rosa, Tailwind funciona.
- *
- * 12. Se ainda há problemas de layout "gigante e preto", padronize root/html/body com Tailwind conforme início deste bloco.
- *
- * 13. Caso queira reset mais agressivo, adicione abaixo ao final do seu globals.css:
- *
- * *, *::before, *::after {
- *   box-sizing: border-box;
- * }
- *
- * html, body {
- *   @apply bg-black text-white w-full h-full p-0 m-0;
- * }
- */
-<section
-  id="investimento"
-  className="bg-zinc-950 py-20 px-4 sm:px-0 border-y border-white/10 relative"
->
-  <div className="max-w-6xl mx-auto">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
-        Investir em Presença de Alto Nível
-      </h2>
-      <p className="mt-4 text-lg text-zinc-300 max-w-2xl mx-auto">
-        Soluções para profissionais e negócios que exigem alta performance, credibilidade instantânea e conversão real.
-      </p>
-    </div>
-    <div className="grid gap-8 md:grid-cols-3">
-      {/* Card 1 */}
-      <div className="rounded-xl border border-cyan-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-cyan-500/30 group relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none rounded-xl border border-cyan-400/20 blur-lg opacity-60 group-hover:opacity-80 transition" style={{ filter: 'drop-shadow(0 0 21px #06b6d4)' }}></div>
-        <h3 className="text-xl font-semibold text-white mb-3 relative z-10">
-          Presença Digital de Autoridade
-        </h3>
-        <p className="text-zinc-300 mb-5 relative z-10">
-          Landing Pages premium desenhadas para quem investe pesado em tráfego e deseja conquistar leads de alto ticket. Design exclusivo, copywriting persuasivo e performance inigualável para resultados imediatos.
-        </p>
-        <span className="inline-block bg-cyan-500/10 text-cyan-300 text-xs font-medium rounded py-1 px-3 uppercase tracking-wide relative z-10">
-          Exclusivo para quem busca alta conversão
-        </span>
-      </div>
-      {/* Card 2 */}
-      <div className="rounded-xl border border-emerald-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-emerald-400/30 group relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none rounded-xl border border-emerald-400/20 blur-lg opacity-60 group-hover:opacity-80 transition" style={{ filter: 'drop-shadow(0 0 21px #34d399)' }}></div>
-        <h3 className="text-xl font-semibold text-white mb-3 relative z-10">
-          Ecossistema de Vendas Completo
-        </h3>
-        <p className="text-zinc-300 mb-5 relative z-10">
-          Sites institucionais robustos, rápidos, com estrutura que transmite confiança desde o primeiro acesso. Foco em trajetória de credibilidade, segurança e autoridade para seu negócio prosperar.
-        </p>
-        <span className="inline-block bg-emerald-500/10 text-emerald-300 text-xs font-medium rounded py-1 px-3 uppercase tracking-wide relative z-10">
-          Segurança & Performance
-        </span>
-      </div>
-      {/* Card 3 */}
-      <div className="rounded-xl border border-fuchsia-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-fuchsia-400/30 group relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none rounded-xl border border-fuchsia-400/20 blur-lg opacity-60 group-hover:opacity-80 transition" style={{ filter: 'drop-shadow(0 0 21px #d946ef)' }}></div>
-        <h3 className="text-xl font-semibold text-white mb-3 relative z-10">
-          Engenharia Sob Medida
-        </h3>
-        <p className="text-zinc-300 mb-5 relative z-10">
-          Desenvolvimento de sistemas personalizados e soluções complexas. Projetos desenhados do zero para necessidades específicas — tecnologia, automação e diferenciação, sempre entrega única e propriedade total.
-        </p>
-        <span className="inline-block bg-fuchsia-500/10 text-fuchsia-300 text-xs font-medium rounded py-1 px-3 uppercase tracking-wide relative z-10">
-          Solução Exclusiva
-        </span>
-      </div>
-    </div>
-    {/* Consultoria Flexível */}
-    <div className="mt-16 flex flex-col items-center">
-      <div className="bg-zinc-900/80 border border-cyan-400/20 rounded-lg px-8 py-6 max-w-2xl shadow-cyan-500/10 shadow flex flex-col items-center">
-        <span className="mb-2 text-base font-bold text-cyan-400 tracking-wider uppercase">
-          Consultoria Flexível
-        </span>
-        <p className="text-zinc-200 text-center mb-4">
-          Compreendemos que negócios de elite possuem necessidades únicas. Cada orçamento é planejado após uma análise estratégica e consultiva, garantindo a melhor solução para o seu cenário.
-        </p>
-        <div className="flex gap-4 w-full flex-col sm:flex-row justify-center">
-          <a
-            href="https://wa.me/5511978481415"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-cyan-400 text-black font-semibold rounded-lg px-7 py-4 shadow-cyan-500/40 shadow-sm hover:bg-cyan-300 hover:shadow-lg transition-all text-base"
-          >
-            Agendar Consultoria Estratégica
-          </a>
-          <a
-            href="mailto:atendimento@agenciataonline.com.br?subject=Solicitar%20Orçamento%20Exclusivo"
-            className="text-cyan-300 border border-cyan-400 bg-zinc-950/70 hover:bg-cyan-400/10 rounded-lg px-7 py-4 font-semibold transition-all text-base"
-          >
-            Solicitar Orçamento Exclusivo
-          </a>
-        </div>
-        <div className="mt-6 text-zinc-400 text-xs text-center italic tracking-tight">
-          Entrega única, sem mensalidades. O código é seu, pertence à sua empresa.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>

@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${inter.variable} h-full antialiased`}>
-      <body className="antialiased">
+      <body className="min-h-full bg-black font-sans text-white antialiased">
         {children}
       </body>
     </html>
