@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   description:
     "Engenharia de software para negócios de luxo. Entrega única, sem mensalidade.",
   icons: {
-    icon: "/favicon.png",
-    apple: "/favicon.png",
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "any" }],
+    apple: [{ url: "/favicon.png", type: "image/png" }],
   },
   openGraph: {
     type: "website",
@@ -33,7 +33,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full bg-black font-sans text-white">
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+      </head>
+      <body className="min-h-full bg-black font-sans text-white antialiased">
         {children}
       </body>
     </html>

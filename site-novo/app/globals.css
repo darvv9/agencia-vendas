@@ -37,9 +37,9 @@ body {
 .logo-header {
   height: clamp(80px, 7vw, 180px);
   width: auto;
+  max-width: 100%;
   object-fit: contain;
   display: block;
-  mix-blend-mode: screen;
   background: transparent;
   filter: drop-shadow(0 0 18px rgba(0, 229, 255, 0.18));
 }

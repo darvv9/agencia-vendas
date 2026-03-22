@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logoImg from "./images/logo.png";
 
 export default function Home() {
   const year = new Date().getFullYear();
@@ -6,46 +7,40 @@ export default function Home() {
   return (
     <>
       <header className="relative overflow-hidden bg-black hero-top-gradient">
-        <div style={{ isolation: "isolate" }}>
-          <div className="mx-auto max-w-6xl px-4 pt-12 pb-16 sm:px-6 sm:pb-24 lg:px-8 lg:pb-32">
-            <div className="mx-auto max-w-4xl text-center">
-              <div
-                className="mb-8 flex justify-center"
-                style={{ background: "transparent", border: 0 }}
+        <div className="mx-auto max-w-6xl px-4 pt-12 pb-16 sm:px-6 sm:pb-24 lg:px-8 lg:pb-32">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="mb-8 flex justify-center bg-transparent">
+              <Image
+                src={logoImg}
+                alt="Tá Online"
+                priority
+                placeholder="blur"
+                className="logo-header h-auto w-auto max-w-full"
+              />
+            </div>
+            <h1 className="text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
+              Sua empresa no lugar certo, na hora certa.
+            </h1>
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-300 sm:text-xl">
+              Autoridade digital e mais faturamento para clínicas e negócios
+              locais. Seja encontrado, confiado e escolhido — com presença
+              online que converte visitantes em clientes.
+            </p>
+            <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+              <a
+                href="https://wa.me/5511978481415"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-cyan text-black shadow-cyan-glow hover:opacity-90 focus:ring-cyan focus:ring-offset-black inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold transition-all focus:ring-2 focus:ring-offset-2 focus:outline-none"
               >
-                <Image
-                  src="/logo.png"
-                  alt="Tá Online"
-                  width={800}
-                  height={300}
-                  priority
-                  className="logo-header"
-                />
-              </div>
-              <h1 className="text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-                Sua empresa no lugar certo, na hora certa.
-              </h1>
-              <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-300 sm:text-xl">
-                Autoridade digital e mais faturamento para clínicas e negócios
-                locais. Seja encontrado, confiado e escolhido — com presença
-                online que converte visitantes em clientes.
-              </p>
-              <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-                <a
-                  href="https://wa.me/5511978481415"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-cyan text-black shadow-cyan-glow hover:opacity-90 focus:ring-cyan focus:ring-offset-black inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold transition-all focus:ring-2 focus:ring-offset-2 focus:outline-none"
-                >
-                  Falar com Especialista
-                </a>
-                <a
-                  href="#valor"
-                  className="text-cyan border-cyan hover:bg-cyan/10 inline-flex items-center justify-center rounded-lg border-2 px-8 py-4 text-base font-semibold transition-colors"
-                >
-                  Por que autoridade digital
-                </a>
-              </div>
+                Falar com Especialista
+              </a>
+              <a
+                href="#valor"
+                className="text-cyan border-cyan hover:bg-cyan/10 inline-flex items-center justify-center rounded-lg border-2 px-8 py-4 text-base font-semibold transition-colors"
+              >
+                Por que autoridade digital
+              </a>
             </div>
           </div>
         </div>
@@ -155,6 +150,111 @@ export default function Home() {
                 </p>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="investimento"
+        className="relative border-y border-white/10 bg-zinc-950 px-4 py-20 sm:px-0"
+      >
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+              Investir em Presença de Alto Nível
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-300">
+              Soluções para profissionais e negócios que exigem alta
+              performance, credibilidade instantânea e conversão real.
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            <div className="group relative overflow-hidden rounded-xl border border-cyan-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-cyan-500/30">
+              <div
+                className="pointer-events-none absolute inset-0 rounded-xl border border-cyan-400/20 opacity-60 blur-lg transition group-hover:opacity-80"
+                style={{ filter: "drop-shadow(0 0 21px #06b6d4)" }}
+              />
+              <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
+                Presença Digital de Autoridade
+              </h3>
+              <p className="relative z-10 mb-5 text-zinc-300">
+                Landing Pages premium desenhadas para quem investe pesado em
+                tráfego e deseja conquistar leads de alto ticket. Design
+                exclusivo, copywriting persuasivo e performance inigualável
+                para resultados imediatos.
+              </p>
+              <span className="relative z-10 inline-block rounded bg-cyan-500/10 px-3 py-1 text-xs font-medium tracking-wide text-cyan-300 uppercase">
+                Exclusivo para quem busca alta conversão
+              </span>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl border border-emerald-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-emerald-400/30">
+              <div
+                className="pointer-events-none absolute inset-0 rounded-xl border border-emerald-400/20 opacity-60 blur-lg transition group-hover:opacity-80"
+                style={{ filter: "drop-shadow(0 0 21px #34d399)" }}
+              />
+              <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
+                Ecossistema de Vendas Completo
+              </h3>
+              <p className="relative z-10 mb-5 text-zinc-300">
+                Sites institucionais robustos, rápidos, com estrutura que
+                transmite confiança desde o primeiro acesso. Foco em trajetória
+                de credibilidade, segurança e autoridade para seu negócio
+                prosperar.
+              </p>
+              <span className="relative z-10 inline-block rounded bg-emerald-500/10 px-3 py-1 text-xs font-medium tracking-wide text-emerald-300 uppercase">
+                Segurança & Performance
+              </span>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl border border-fuchsia-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-fuchsia-400/30">
+              <div
+                className="pointer-events-none absolute inset-0 rounded-xl border border-fuchsia-400/20 opacity-60 blur-lg transition group-hover:opacity-80"
+                style={{ filter: "drop-shadow(0 0 21px #d946ef)" }}
+              />
+              <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
+                Engenharia Sob Medida
+              </h3>
+              <p className="relative z-10 mb-5 text-zinc-300">
+                Desenvolvimento de sistemas personalizados e soluções complexas.
+                Projetos desenhados do zero para necessidades específicas —
+                tecnologia, automação e diferenciação, sempre entrega única e
+                propriedade total.
+              </p>
+              <span className="relative z-10 inline-block rounded bg-fuchsia-500/10 px-3 py-1 text-xs font-medium tracking-wide text-fuchsia-300 uppercase">
+                Solução Exclusiva
+              </span>
+            </div>
+          </div>
+          <div className="mt-16 flex flex-col items-center">
+            <div className="flex max-w-2xl flex-col items-center rounded-lg border border-cyan-400/20 bg-zinc-900/80 px-8 py-6 shadow shadow-cyan-500/10">
+              <span className="mb-2 text-base font-bold tracking-wider text-cyan-400 uppercase">
+                Consultoria Flexível
+              </span>
+              <p className="mb-4 text-center text-zinc-200">
+                Compreendemos que negócios de elite possuem necessidades únicas.
+                Cada orçamento é planejado após uma análise estratégica e
+                consultiva, garantindo a melhor solução para o seu cenário.
+              </p>
+              <div className="flex w-full flex-col justify-center gap-4 sm:flex-row">
+                <a
+                  href="https://wa.me/5511978481415"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-cyan-400 px-7 py-4 text-base font-semibold text-black shadow-sm shadow-cyan-500/40 transition-all hover:bg-cyan-300 hover:shadow-lg"
+                >
+                  Agendar Consultoria Estratégica
+                </a>
+                <a
+                  href="mailto:atendimento@agenciataonline.com.br?subject=Solicitar%20Orçamento%20Exclusivo"
+                  className="rounded-lg border border-cyan-400 bg-zinc-950/70 px-7 py-4 text-base font-semibold text-cyan-300 transition-all hover:bg-cyan-400/10"
+                >
+                  Solicitar Orçamento Exclusivo
+                </a>
+              </div>
+              <div className="mt-6 text-center text-xs tracking-tight text-zinc-400 italic">
+                Entrega única, sem mensalidades. O código é seu, pertence à sua
+                empresa.
+              </div>
+            </div>
           </div>
         </div>
       </section>
