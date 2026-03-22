@@ -1,22 +1,10 @@
 type Props = {
-  orcamentoExclusivoHref: string;
   whatsappGeralHref: string;
 };
 
-export function FloatingWhatsappBar({
-  orcamentoExclusivoHref,
-  whatsappGeralHref,
-}: Props) {
+export function FloatingWhatsappBar({ whatsappGeralHref }: Props) {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-[9999] flex items-end justify-between gap-3 px-4 pb-6 sm:px-6">
-      <a
-        href={orcamentoExclusivoHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-cyan text-black shadow-cyan-glow hover:opacity-90 focus:ring-cyan focus:ring-offset-black flex h-14 max-w-[min(100%,calc(100vw-5.5rem))] shrink-0 items-center justify-center rounded-full px-4 text-center text-sm font-semibold transition-all hover:scale-[1.02] focus:ring-2 focus:ring-offset-2 focus:outline-none sm:px-6 sm:text-base"
-      >
-        Solicitar Orçamento Exclusivo
-      </a>
+    <div className="fixed inset-x-0 bottom-0 z-[9999] flex items-end justify-end px-4 pb-6 sm:px-6">
       <a
         href={whatsappGeralHref}
         target="_blank"

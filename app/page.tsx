@@ -253,14 +253,6 @@ export default function Home() {
                 >
                   WhatsApp
                 </a>
-                <a
-                  href={WHATSAPP_ORCAMENTO_EXCLUSIVO_HREF}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-lg border border-cyan-400 bg-zinc-950/70 px-7 py-4 text-center text-base font-semibold text-cyan-300 transition-all hover:bg-cyan-400/10"
-                >
-                  Solicitar Orçamento Exclusivo
-                </a>
               </div>
               <div className="mt-6 text-center text-xs tracking-tight text-zinc-400 italic">
                 Invista uma vez só. O site é todo seu. Zero mensalidade. Você
@@ -315,10 +307,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <FloatingWhatsappBar
-        orcamentoExclusivoHref={WHATSAPP_ORCAMENTO_EXCLUSIVO_HREF}
-        whatsappGeralHref={WHATSAPP_GERAL_HREF}
-      />
+      <FloatingWhatsappBar whatsappGeralHref={WHATSAPP_GERAL_HREF} />
     </>
   );
 }
