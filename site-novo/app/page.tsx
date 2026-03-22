@@ -5,6 +5,10 @@ const WHATSAPP_MESSAGE =
   "Olá! Vim pelo site da Tá Online e gostaria de um diagnóstico estratégico do meu projeto.";
 const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
+const WHATSAPP_BUDGET_MESSAGE =
+  "Olá! Estou no site da Tá Online e gostaria de solicitar um orçamento personalizado para o meu projeto.";
+const WHATSAPP_BUDGET_HREF = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_BUDGET_MESSAGE)}`;
+
 export default function Home() {
   const year = new Date().getFullYear();
 
@@ -320,43 +324,16 @@ export default function Home() {
           </p>
         </div>
       </footer>
+
+      <a
+        href={WHATSAPP_BUDGET_HREF}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-cyan text-black shadow-cyan-glow hover:opacity-90 focus:ring-cyan focus:ring-offset-black fixed bottom-6 left-6 z-50 flex h-14 max-w-[calc(100vw-5rem)] items-center justify-center rounded-full px-5 text-sm font-semibold transition-all hover:scale-105 focus:ring-2 focus:ring-offset-2 focus:outline-none sm:px-6 sm:text-base"
+        aria-label="Solicitar orçamento personalizado pelo WhatsApp"
+      >
+        Orçamento personalizado
+      </a>
     </>
   );
 }
-// Link do WhatsApp para orçamento exclusivo
-const WHATSAPP_BUDGET_HREF =
-  "https://wa.me/5521999999999?text=Olá!%20Estou%20no%20site%20da%20Tá%20Online%20e%20gostaria%20de%20solicitar%20um%20orçamento%20exclusivo%20para%20meu%20projeto.";
-
-{/* Botão fixo de Solicitar Orçamento Exclusivo */}
-<a
-  href={WHATSAPP_BUDGET_HREF}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-cyan text-black shadow-cyan-glow hover:opacity-90 focus:ring-cyan focus:ring-offset-black fixed left-6 bottom-6 z-50 flex h-14 px-6 items-center justify-center rounded-full transition-all hover:scale-105 focus:ring-2 focus:ring-offset-2 focus:outline-none font-semibold"
-  aria-label="Solicitar Orçamento Exclusivo pelo WhatsApp"
->
-  Solicitar Orçamento Exclusivo
-</a>
-
-{/* Ajuste do conteúdo principal: linguagem formal, termos corretos */}
-
-{/* Exemplo de como atualizar seção de serviços (altere onde for pertinente no seu arquivo):  */}
-
-{/*
-<section> 
-  <h2 className="text-2xl font-bold mb-4">Nossas Soluções</h2>
-  <ul className="list-disc list-inside space-y-2">
-    <li>
-      <span className="font-semibold text-cyan">Páginas de Alta Conversão</span> <span className="text-gray-400">para captação de novos clientes com foco no segmento de clínicas e academias.</span>
-    </li>
-    <li>
-      <span className="font-semibold text-cyan">Sistemas de Gestão</span> <span className="text-gray-400">personalizados para otimizar os processos do seu negócio, garantindo eficiência e facilidade no dia a dia.</span>
-    </li>
-    <li>
-      <span className="font-semibold text-cyan">Consultoria Estratégica Digital</span> <span className="text-gray-400">voltada para resultados concretos e presença online autêntica.</span>
-    </li>
-  </ul>
-</section>
-*/}
-
-// Certifique-se de substituir "Landing Pages" por "Páginas de Alta Conversão" e "SaaS" por "Sistemas de Gestão" em todo o conteúdo do site, ajustando o tom para objetivo, formal e diretamente voltado para proprietários de clínicas e academias. Adapte textos institucionais, títulos, subtítulos e descrições mantendo clareza, profissionalismo e ênfase em resultados práticos.
