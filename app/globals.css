@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@source "./**/*.{js,ts,jsx,tsx,mdx}";
+@source "../components/**/*.{js,ts,jsx,tsx}";
+
+@theme inline {
+  --color-black: #050505;
+  --color-surface: #0f0f0f;
+  --color-card: #141414;
+  --color-cyan: #00e5ff;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.hero-top-gradient {
+  background:
+    radial-gradient(
+      1100px 420px at 50% -10%,
+      rgba(0, 229, 255, 0.22) 0%,
+      rgba(0, 229, 255, 0.08) 35%,
+      rgba(0, 229, 255, 0) 70%
+    ),
+    radial-gradient(
+      900px 360px at 50% 10%,
+      rgba(255, 255, 255, 0.06) 0%,
+      rgba(255, 255, 255, 0) 55%
+    ),
+    linear-gradient(180deg, #121212 0%, #050505 62%, #050505 100%);
+}
+
+.logo-header {
+  height: clamp(80px, 7vw, 180px);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+  filter: drop-shadow(0 0 18px rgba(0, 229, 255, 0.18));
+}
+
+.shadow-cyan-glow {
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.35);
+}
