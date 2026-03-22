@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { FloatingWhatsappBar } from "../components/FloatingWhatsappBar";
 
+/* WhatsApp — links diretos */
 const WHATSAPP_NUMERO = "5521998522645";
-
-/** Mensagem e URL exatas do orçamento exclusivo (diagnóstico). */
 const TEXTO_ORCAMENTO_EXCLUSIVO =
   "Olá! Vi o site da Tá Online e quero um diagnóstico pro meu negócio.";
-const WHATSAPP_ORCAMENTO_EXCLUSIVO_HREF = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(TEXTO_ORCAMENTO_EXCLUSIVO)}`;
-
+const WHATSAPP_ORCAMENTO_EXCLUSIVO_HREF =
+  "https://wa.me/5521998522645?text=Olá!%20Vi%20o%20site%20da%20Tá%20Online%20e%20quero%20um%20diagnóstico%20pro%20meu%20negócio.";
 const TEXTO_WHATSAPP_GERAL = "Olá! Vi o site da Tá Online e quero falar com vocês.";
 const WHATSAPP_GERAL_HREF = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(TEXTO_WHATSAPP_GERAL)}`;
 
@@ -30,12 +29,10 @@ export default function Home() {
               />
             </div>
             <h1 className="text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-              Mais clientes. Mais lucro. Sem mensalidade.
+              Mais alunos. Mais pacientes. Mais clientes na sua barbearia. Sem mensalidade.
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-300 sm:text-xl">
-              Academia, clínica, barbearia ou loja: a gente monta seu site e sua
-              estrutura digital para você aparecer bem, vender mais e mandar no
-              seu negócio.
+              Seu negócio pronto para aparecer. Aumente o lucro. Tenha autoridade no mercado. Foco no dono de academia de Jiu Jitsu, clínica ou barbearia.
             </p>
             <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
               <a
@@ -44,13 +41,13 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="bg-cyan text-black shadow-cyan-glow hover:opacity-90 focus:ring-cyan focus:ring-offset-black inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold transition-all focus:ring-2 focus:ring-offset-2 focus:outline-none"
               >
-                Falar no WhatsApp
+                Fale no WhatsApp com nossos especialistas
               </a>
               <a
                 href="#valor"
                 className="text-cyan border-cyan hover:bg-cyan/10 inline-flex items-center justify-center rounded-lg border-2 px-8 py-4 text-base font-semibold transition-colors"
               >
-                Por que isso importa
+                Entenda a diferença
               </a>
             </div>
           </div>
@@ -64,11 +61,10 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-14 text-center">
             <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-              Sem presença forte na internet, o cliente vai para o concorrente
+              Não tem presença digital forte? O cliente treina, consulta ou corta cabelo no concorrente.
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-400">
-              Hoje todo mundo pesquisa no celular. Se seu negócio parece fraco
-              ou sumido, você perde dinheiro. Ponto.
+              O público pesquisa tudo pelo celular antes de decidir. Quem não aparece com força perde. Simples assim.
             </p>
           </div>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -77,11 +73,10 @@ export default function Home() {
                 1
               </div>
               <h3 className="mt-4 text-lg font-semibold text-white">
-                Site confuso = cliente que some
+                Site confuso = menos alunos, clientes ou pacientes
               </h3>
               <p className="mt-2 text-gray-400">
-                Telefone escondido, preço nebuloso, bagunça no celular. O cliente
-                não tem paciência. Ele fecha com quem deixa tudo óbvio.
+                Sem informações claras, telefone escondido, preço difícil? A pessoa vai embora. Cliente quer tudo fácil, direto e confiável.
               </p>
             </div>
             <div className="bg-card border-white/5 rounded-xl border p-6">
@@ -89,11 +84,10 @@ export default function Home() {
                 2
               </div>
               <h3 className="mt-4 text-lg font-semibold text-white">
-                Não aparece na busca = venda para outro
+                Sua academia, clínica ou barbearia não está no topo da busca? O dinheiro vai pra outro.
               </h3>
               <p className="mt-2 text-gray-400">
-                Se o Google não te mostra, você não existe na hora da decisão.
-                Quem aparece primeiro leva o cliente.
+                Se o Google não mostra seu nome, seu concorrente agradece. Presença forte garantida, você é encontrado primeiro.
               </p>
             </div>
             <div className="bg-card border-white/5 sm:col-span-2 lg:col-span-1 rounded-xl border p-6">
@@ -101,11 +95,10 @@ export default function Home() {
                 3
               </div>
               <h3 className="mt-4 text-lg font-semibold text-white">
-                Cara de amador = desconfiança
+                Imagem amadora afasta e gera desconfiança
               </h3>
               <p className="mt-2 text-gray-400">
-                Se o site parece velho ou genérico, o cliente acha que o serviço
-                também é. Imagem conta — e muito.
+                Site velho, genérico, sem profissionalismo, derruba sua autoridade. Valorize a imagem da sua academia, clínica ou barbearia.
               </p>
             </div>
           </div>
@@ -116,11 +109,10 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-14 text-center">
             <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-              O que a Tá Online entrega para você vender mais
+              O que você recebe com a Tá Online
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-400">
-              Projeto pronto para uso. Você no topo da mente do cliente. Pagamento
-              único — zero mensalidade.
+              Seu site pronto. Seu nome no topo. Autoridade de verdade. Investimento único. Zero mensalidade.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
@@ -128,12 +120,10 @@ export default function Home() {
               <div className="bg-cyan h-2" />
               <div className="p-8">
                 <h3 className="text-xl font-semibold text-white">
-                  Sites que vendem
+                  Sites que vendem de verdade
                 </h3>
                 <p className="mt-3 text-gray-400">
-                  Páginas de alta conversão: diretas, bonitas e feitas para o
-                  cliente marcar, ligar ou chamar no WhatsApp. Menos enrolação,
-                  mais resultado.
+                  Páginas de Alta Conversão para captar mais alunos, clientes ou pacientes. Facilite o contato. Aumente seu faturamento sem enrolação.
                 </p>
               </div>
             </article>
@@ -141,11 +131,10 @@ export default function Home() {
               <div className="bg-cyan h-2" />
               <div className="p-8">
                 <h3 className="text-xl font-semibold text-white">
-                  Seu nome na frente na hora da busca
+                  Seu nome aparece primeiro no Google
                 </h3>
                 <p className="mt-3 text-gray-400">
-                  Ajustamos tudo para você ser achado quando alguém procura o que
-                  você faz. Mais gente chegando na porta.
+                  Sua academia, clínica ou barbearia fica fácil de achar. Mais gente chegando todos os dias. Mais credibilidade.
                 </p>
               </div>
             </article>
@@ -153,11 +142,10 @@ export default function Home() {
               <div className="bg-cyan h-2" />
               <div className="p-8">
                 <h3 className="text-xl font-semibold text-white">
-                  Celular impecável
+                  Impecável no celular
                 </h3>
                 <p className="mt-3 text-gray-400">
-                  A maioria decide pelo smartphone. Seu site fica rápido, claro
-                  e profissional no bolso do cliente.
+                  Seu site rápido e bonito no smartphone. Cliente chega, se sente seguro e decide fácil.
                 </p>
               </div>
             </article>
@@ -172,11 +160,10 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
-              Um investimento. Seu negócio no alto. Sem mensalidade.
+              Investimento único. Mais lucro para sua academia, clínica ou barbearia.
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-300">
-              Para quem cobra qualidade no salão, na academia ou na consulta: a
-              mesma qualidade no digital. Autoridade total, lucro no foco.
+              Valorize o negócio que você construiu. Resultados reais. Zero mensalidade. Você no controle.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
@@ -186,15 +173,13 @@ export default function Home() {
                 style={{ filter: "drop-shadow(0 0 21px #06b6d4)" }}
               />
               <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
-                Sites que vendem + páginas de alta conversão
+                Sites que vendem e captam mais clientes
               </h3>
               <p className="relative z-10 mb-5 text-zinc-300">
-                Você gasta com anúncio? Então precisa de página que transforme
-                visita em ligação ou WhatsApp. Objetivo claro: mais cliente na
-                agenda.
+                Gasta com anúncio ou divulgação? Precisa de páginas que convertem visitas em mensagens no WhatsApp e ligações. Lotação garantida em pouco tempo.
               </p>
               <span className="relative z-10 inline-block rounded bg-cyan-500/10 px-3 py-1 text-xs font-medium tracking-wide text-cyan-300 uppercase">
-                Mais contatos · mais vendas
+                Mais contatos · Mais vendas
               </span>
             </div>
             <div className="group relative overflow-hidden rounded-xl border border-emerald-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-emerald-400/30">
@@ -203,15 +188,13 @@ export default function Home() {
                 style={{ filter: "drop-shadow(0 0 21px #34d399)" }}
               />
               <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
-                Sua estrutura digital completa
+                Estrutura digital profissional para seu negócio
               </h3>
               <p className="relative z-10 mb-5 text-zinc-300">
-                Site institucional que conta quem você é, o que vende e por que
-                confiar. Projeto pronto para uso — você passa segurança desde o
-                primeiro clique.
+                Seu site institucional mostra credibilidade e destaca seus diferenciais. O cliente sente confiança já no primeiro clique.
               </p>
               <span className="relative z-10 inline-block rounded bg-emerald-500/10 px-3 py-1 text-xs font-medium tracking-wide text-emerald-300 uppercase">
-                Profissional · confiável
+                Profissional · Confiável
               </span>
             </div>
             <div className="group relative overflow-hidden rounded-xl border border-fuchsia-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-fuchsia-400/30">
@@ -220,26 +203,23 @@ export default function Home() {
                 style={{ filter: "drop-shadow(0 0 21px #d946ef)" }}
               />
               <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
-                Sistemas para o seu negócio
+                Soluções digitais na sua mão
               </h3>
               <p className="relative z-10 mb-5 text-zinc-300">
-                Tecnologia de vendas e rotina sob medida: cadastros, formulários,
-                fluxo do jeito que sua equipe trabalha. Tudo no seu nome. Sem
-                aluguel mensal.
+                Sistemas de gestão para rotinas: cadastros, agendamentos, controle do jeito que seu time usa. Seu nome, sua marca. Sem mensalidade.
               </p>
               <span className="relative z-10 inline-block rounded bg-fuchsia-500/10 px-3 py-1 text-xs font-medium tracking-wide text-fuchsia-300 uppercase">
-                Seu negócio no topo · pagamento único
+                Seu negócio forte · Investimento único
               </span>
             </div>
           </div>
           <div className="mt-16 flex flex-col items-center">
             <div className="flex max-w-2xl flex-col items-center rounded-lg border border-cyan-400/20 bg-zinc-900/80 px-8 py-6 shadow shadow-cyan-500/10">
               <span className="mb-2 text-base font-bold tracking-wider text-cyan-400 uppercase">
-                Vamos conversar?
+                Fale com a gente
               </span>
               <p className="mb-4 text-center text-zinc-200">
-                Cada negócio é um caso. A gente ouve, entende e propõe o melhor
-                caminho — sem pegadinha na primeira conversa.
+                Cada negócio é único. Entendemos seu desafio e trazemos a solução para sua academia, clínica ou barbearia. Fale direto com especialista.
               </p>
               <div className="flex w-full flex-col justify-center gap-4 sm:flex-row">
                 <a
@@ -251,7 +231,7 @@ export default function Home() {
                   WhatsApp
                 </a>
                 <a
-                  href={WHATSAPP_ORCAMENTO_EXCLUSIVO_HREF}
+                  href="https://wa.me/5521998522645?text=Olá!%20Vi%20o%20site%20da%20Tá%20Online%20e%20quero%20um%20diagnóstico%20pro%20meu%20negócio."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-lg border border-cyan-400 bg-zinc-950/70 px-7 py-4 text-center text-base font-semibold text-cyan-300 transition-all hover:bg-cyan-400/10"
@@ -260,7 +240,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="mt-6 text-center text-xs tracking-tight text-zinc-400 italic">
-                Você paga uma vez. Fica com tudo. Sem mensalidade. Sua empresa manda.
+                Invista uma vez só. O site é todo seu. Zero mensalidade. Você decide.
               </div>
             </div>
           </div>
@@ -270,13 +250,13 @@ export default function Home() {
       <section className="bg-surface border-white/5 border-t py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
-            Quer mais cliente e mais lucro com imagem de respeito?
+            Quer mais clientes de verdade para sua barbearia, clínica ou academia?
           </h2>
           <p className="mt-4 text-lg text-gray-400">
-            Chama no WhatsApp. Em dois toques você já está falando com a gente.
+            Clique e fale direto. Solução sem enrolação para dono de negócio sério.
           </p>
           <a
-            href={WHATSAPP_ORCAMENTO_EXCLUSIVO_HREF}
+            href="https://wa.me/5521998522645?text=Olá!%20Vi%20o%20site%20da%20Tá%20Online%20e%20quero%20um%20diagnóstico%20pro%20meu%20negócio."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-cyan text-black shadow-cyan-glow hover:opacity-90 focus:ring-cyan focus:ring-offset-surface mt-8 inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold transition-all focus:ring-2 focus:ring-offset-2 focus:outline-none"
@@ -290,8 +270,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl space-y-1 px-4 text-center text-sm text-gray-400 sm:px-6 lg:px-8">
           <p>
             © {year}{" "}
-            <span className="text-cyan font-semibold">Tá Online</span> — sites e
-            estrutura digital para seu negócio crescer. Contato:{" "}
+            <span className="text-cyan font-semibold">Tá Online</span> — Sites que vendem e soluções digitais para academia de Jiu Jitsu, clínicas e barbearias terem autoridade real. Contato:{" "}
             <a
               href={WHATSAPP_GERAL_HREF}
               target="_blank"
@@ -303,7 +282,7 @@ export default function Home() {
             . Todos os direitos reservados.
           </p>
           <p className="text-xs text-gray-500">
-            Pagamento único. Sem mensalidade. O projeto é seu.
+            Investimento único. Sem mensalidade. O site é seu.
           </p>
         </div>
       </footer>
