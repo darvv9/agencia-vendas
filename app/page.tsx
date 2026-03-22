@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FloatingWhatsappBar } from "@/components/FloatingWhatsappBar";
 
-const WHATSAPP_NUMERO = "5521998522645";
+const WHATSAPP_NUMERO = "5511978481415";
 const TEXTO_ORCAMENTO_EXCLUSIVO =
   "Olá! Vi o site da Tá Online e quero um diagnóstico pro meu negócio.";
 const WHATSAPP_ORCAMENTO_EXCLUSIVO_HREF = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(TEXTO_ORCAMENTO_EXCLUSIVO)}`;
@@ -305,7 +305,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-cyan font-medium hover:underline"
             >
-              +55 21 99852-2645
+              +55 11 97848-1415
             </a>
             . Todos os direitos reservados.
           </p>
