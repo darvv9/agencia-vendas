@@ -12,18 +12,7 @@ export const metadata: Metadata = {
   title: "Tá Online — Autoridade digital para negócios de alta performance",
   description:
     "Engenharia de software para negócios de luxo. Entrega única, sem mensalidade.",
-  icons: {
-    icon: "/favicon.png",
-    apple: "/favicon.png",
-  },
-  openGraph: {
-    type: "website",
-    url: "https://agenciataonline.com.br",
-    title: "Agência Tá Online | Sites de Alta Performance",
-    description:
-      "Engenharia de software para negócios de luxo. Entrega única, sem mensalidade.",
-    images: ["https://agenciataonline.com.br/favicon.png"],
-  },
+  icons: "/favicon.png",
 };
 
 export default function RootLayout({

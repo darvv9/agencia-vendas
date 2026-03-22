@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   const year = new Date().getFullYear();
 
@@ -6,15 +8,13 @@ export default function Home() {
       <header className="relative overflow-hidden bg-black hero-top-gradient">
         <div className="mx-auto max-w-6xl px-4 pt-12 pb-16 sm:px-6 sm:pb-24 lg:px-8 lg:pb-32">
           <div className="mx-auto max-w-4xl text-center">
-            <div className="mb-8 flex justify-center bg-transparent">
-              {/* eslint-disable-next-line @next/next/no-img-element -- logo em /public, src absoluto */}
-              <img
+            <div className="mb-8 flex justify-center">
+              <Image
                 src="/logo.png"
                 alt="Tá Online"
                 width={800}
                 height={300}
-                decoding="async"
-                fetchPriority="high"
+                priority
                 className="logo-header h-auto w-auto max-w-full"
               />
             </div>

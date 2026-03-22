@@ -1,6 +1,4 @@
 @import "tailwindcss";
-
-/* Garante que o build de produção escaneie todas as classes usadas no App Router */
 @source "./**/*.{js,ts,jsx,tsx,mdx}";
 
 @theme inline {
