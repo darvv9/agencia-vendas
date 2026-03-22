@@ -1,9 +1,8 @@
 import type { Config } from "tailwindcss";
 
 /**
- * Tailwind v4: tema principal está em `app/globals.css` (`@theme inline`).
- * Este arquivo existe para ferramentas/IDE e para manter a raiz do projeto
- * alinhada ao que o build do Next + `@tailwindcss/postcss` espera.
+ * Tailwind CSS v4: tokens em `app/globals.css` (@theme inline) + PostCSS (`@tailwindcss/postcss`).
+ * `content` abaixo alinha ferramentas e cenários em que o scanner precisa de caminhos explícitos.
  */
 const config: Config = {
   content: [
