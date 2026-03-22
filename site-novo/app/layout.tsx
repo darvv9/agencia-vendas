@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   description:
     "Engenharia de software para negócios de luxo. Entrega única, sem mensalidade.",
   icons: {
-    icon: "/favicon.png",
-    apple: "/favicon.png",
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "any" }],
+    apple: [{ url: "/favicon.png", type: "image/png" }],
   },
   openGraph: {
     type: "website",

@@ -6,46 +6,42 @@ export default function Home() {
   return (
     <>
       <header className="relative overflow-hidden bg-black hero-top-gradient">
-        <div style={{ isolation: "isolate" }}>
-          <div className="mx-auto max-w-6xl px-4 pt-12 pb-16 sm:px-6 sm:pb-24 lg:px-8 lg:pb-32">
-            <div className="mx-auto max-w-4xl text-center">
-              <div
-                className="mb-8 flex justify-center"
-                style={{ background: "transparent", border: 0 }}
+        <div className="mx-auto max-w-6xl px-4 pt-12 pb-16 sm:px-6 sm:pb-24 lg:px-8 lg:pb-32">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="mb-8 flex justify-center bg-transparent">
+              <Image
+                src="/logo.png"
+                alt="Tá Online"
+                width={800}
+                height={300}
+                priority
+                sizes="(max-width: 768px) 100vw, 800px"
+                className="logo-header h-auto w-auto max-w-full"
+              />
+            </div>
+            <h1 className="text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
+              Sua empresa no lugar certo, na hora certa.
+            </h1>
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-300 sm:text-xl">
+              Autoridade digital e mais faturamento para clínicas e negócios
+              locais. Seja encontrado, confiado e escolhido — com presença
+              online que converte visitantes em clientes.
+            </p>
+            <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+              <a
+                href="https://wa.me/5511978481415"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-cyan text-black shadow-cyan-glow hover:opacity-90 focus:ring-cyan focus:ring-offset-black inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold transition-all focus:ring-2 focus:ring-offset-2 focus:outline-none"
               >
-                <Image
-                  src="/logo.png"
-                  alt="Tá Online"
-                  width={800}
-                  height={300}
-                  priority
-                  className="logo-header"
-                />
-              </div>
-              <h1 className="text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-                Sua empresa no lugar certo, na hora certa.
-              </h1>
-              <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-300 sm:text-xl">
-                Autoridade digital e mais faturamento para clínicas e negócios
-                locais. Seja encontrado, confiado e escolhido — com presença
-                online que converte visitantes em clientes.
-              </p>
-              <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-                <a
-                  href="https://wa.me/5511978481415"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-cyan text-black shadow-cyan-glow hover:opacity-90 focus:ring-cyan focus:ring-offset-black inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold transition-all focus:ring-2 focus:ring-offset-2 focus:outline-none"
-                >
-                  Falar com Especialista
-                </a>
-                <a
-                  href="#valor"
-                  className="text-cyan border-cyan hover:bg-cyan/10 inline-flex items-center justify-center rounded-lg border-2 px-8 py-4 text-base font-semibold transition-colors"
-                >
-                  Por que autoridade digital
-                </a>
-              </div>
+                Falar com Especialista
+              </a>
+              <a
+                href="#valor"
+                className="text-cyan border-cyan hover:bg-cyan/10 inline-flex items-center justify-center rounded-lg border-2 px-8 py-4 text-base font-semibold transition-colors"
+              >
+                Por que autoridade digital
+              </a>
             </div>
           </div>
         </div>
