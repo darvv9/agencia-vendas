@@ -1,14 +1,15 @@
 import Image from "next/image";
 import { FloatingWhatsappBar } from "../components/FloatingWhatsappBar";
 
-const WHATSAPP_NUMBER = "5511978481415";
-const WHATSAPP_MESSAGE =
-  "Olá! Vim pelo site da Tá Online e gostaria de um diagnóstico estratégico do meu projeto.";
-const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+const WHATSAPP_NUMERO = "5521998522645";
 
-const WHATSAPP_BUDGET_MESSAGE =
-  "Olá! Estou no site da Tá Online e gostaria de solicitar um orçamento personalizado para o meu projeto.";
-const WHATSAPP_BUDGET_HREF = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_BUDGET_MESSAGE)}`;
+/** Mensagem e URL exatas do orçamento exclusivo (diagnóstico). */
+const TEXTO_ORCAMENTO_EXCLUSIVO =
+  "Olá! Vi o site da Tá Online e quero um diagnóstico pro meu negócio.";
+const WHATSAPP_ORCAMENTO_EXCLUSIVO_HREF = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(TEXTO_ORCAMENTO_EXCLUSIVO)}`;
+
+const TEXTO_WHATSAPP_GERAL = "Olá! Vi o site da Tá Online e quero falar com vocês.";
+const WHATSAPP_GERAL_HREF = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(TEXTO_WHATSAPP_GERAL)}`;
 
 export default function Home() {
   const year = new Date().getFullYear();
@@ -29,26 +30,27 @@ export default function Home() {
               />
             </div>
             <h1 className="text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-              Autoridade no digital. Retorno no caixa. Liberdade sem mensalidade.
+              Mais clientes. Mais lucro. Sem mensalidade.
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-300 sm:text-xl">
-              Clínicas, academias, barbearias e comércios de alto padrão: presença
-              online séria, clara e encontrável — para quem decide pelo celular.
+              Academia, clínica, barbearia ou loja: a gente monta seu site e sua
+              estrutura digital para você aparecer bem, vender mais e mandar no
+              seu negócio.
             </p>
             <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
               <a
-                href={WHATSAPP_HREF}
+                href={WHATSAPP_GERAL_HREF}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-cyan text-black shadow-cyan-glow hover:opacity-90 focus:ring-cyan focus:ring-offset-black inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold transition-all focus:ring-2 focus:ring-offset-2 focus:outline-none"
               >
-                Consultoria estratégica
+                Falar no WhatsApp
               </a>
               <a
                 href="#valor"
                 className="text-cyan border-cyan hover:bg-cyan/10 inline-flex items-center justify-center rounded-lg border-2 px-8 py-4 text-base font-semibold transition-colors"
               >
-                Por que investir na presença online
+                Por que isso importa
               </a>
             </div>
           </div>
@@ -62,11 +64,11 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-14 text-center">
             <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-              Quem não se apresenta bem online perde faturamento
+              Sem presença forte na internet, o cliente vai para o concorrente
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-400">
-              O cliente compara antes de agendar. Quem demonstra ordem, clareza
-              e padrão na primeira tela reforça autoridade — e fecha mais.
+              Hoje todo mundo pesquisa no celular. Se seu negócio parece fraco
+              ou sumido, você perde dinheiro. Ponto.
             </p>
           </div>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -75,11 +77,11 @@ export default function Home() {
                 1
               </div>
               <h3 className="mt-4 text-lg font-semibold text-white">
-                Dados confusos: o interessado desiste na hora
+                Site confuso = cliente que some
               </h3>
               <p className="mt-2 text-gray-400">
-                Contato oculto, horário vago ou navegação difícil no celular.
-                Sem clareza, não há agendamento nem venda.
+                Telefone escondido, preço nebuloso, bagunça no celular. O cliente
+                não tem paciência. Ele fecha com quem deixa tudo óbvio.
               </p>
             </div>
             <div className="bg-card border-white/5 rounded-xl border p-6">
@@ -87,11 +89,11 @@ export default function Home() {
                 2
               </div>
               <h3 className="mt-4 text-lg font-semibold text-white">
-                Fora do mapa quando o serviço é pesquisado
+                Não aparece na busca = venda para outro
               </h3>
               <p className="mt-2 text-gray-400">
-                Quem não aparece na busca cede espaço à concorrência. A
-                oportunidade segue para outro endereço.
+                Se o Google não te mostra, você não existe na hora da decisão.
+                Quem aparece primeiro leva o cliente.
               </p>
             </div>
             <div className="bg-card border-white/5 sm:col-span-2 lg:col-span-1 rounded-xl border p-6">
@@ -99,12 +101,11 @@ export default function Home() {
                 3
               </div>
               <h3 className="mt-4 text-lg font-semibold text-white">
-                Imagem abaixo do padrão do negócio
+                Cara de amador = desconfiança
               </h3>
               <p className="mt-2 text-gray-400">
-                Aparência desatualizada ou amadora reduz confiança. Estabelecimentos
-                de referência precisam parecer — e ser — profissionais desde o
-                primeiro contato.
+                Se o site parece velho ou genérico, o cliente acha que o serviço
+                também é. Imagem conta — e muito.
               </p>
             </div>
           </div>
@@ -115,11 +116,11 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-14 text-center">
             <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-              Resultados que sua clínica, academia ou barbearia pode esperar
+              O que a Tá Online entrega para você vender mais
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-400">
-              Solução digital sob medida: credibilidade, mensagem objetiva e
-              caminho simples para marcar, ligar ou comparecer.
+              Projeto pronto para uso. Você no topo da mente do cliente. Pagamento
+              único — zero mensalidade.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
@@ -127,11 +128,12 @@ export default function Home() {
               <div className="bg-cyan h-2" />
               <div className="p-8">
                 <h3 className="text-xl font-semibold text-white">
-                  Presença alinhada ao nível do seu atendimento
+                  Sites que vendem
                 </h3>
                 <p className="mt-3 text-gray-400">
-                  Informações essenciais, linguagem direta e experiência que
-                  transmite seriedade — coerente com o padrão do seu negócio.
+                  Páginas de alta conversão: diretas, bonitas e feitas para o
+                  cliente marcar, ligar ou chamar no WhatsApp. Menos enrolação,
+                  mais resultado.
                 </p>
               </div>
             </article>
@@ -139,12 +141,11 @@ export default function Home() {
               <div className="bg-cyan h-2" />
               <div className="p-8">
                 <h3 className="text-xl font-semibold text-white">
-                  Visibilidade quando o cliente procura seu serviço
+                  Seu nome na frente na hora da busca
                 </h3>
                 <p className="mt-3 text-gray-400">
-                  Seu nome e seu endereço digital coerentes com o que o público
-                  digita na busca. Mais chances de ser escolhido antes dos
-                  concorrentes.
+                  Ajustamos tudo para você ser achado quando alguém procura o que
+                  você faz. Mais gente chegando na porta.
                 </p>
               </div>
             </article>
@@ -152,11 +153,11 @@ export default function Home() {
               <div className="bg-cyan h-2" />
               <div className="p-8">
                 <h3 className="text-xl font-semibold text-white">
-                  Experiência impecável no celular
+                  Celular impecável
                 </h3>
                 <p className="mt-3 text-gray-400">
-                  Leitura rápida, organização clara e resposta ágil. Onde a
-                  decisão acontece, seu negócio aparece com excelência.
+                  A maioria decide pelo smartphone. Seu site fica rápido, claro
+                  e profissional no bolso do cliente.
                 </p>
               </div>
             </article>
@@ -171,11 +172,11 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
-              Investimento único: imagem forte, lucro protegido, sem mensalidade
+              Um investimento. Seu negócio no alto. Sem mensalidade.
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-300">
-              Para quem exige excelência na consulta, no tatame ou no salão: uma
-              presença digital à altura do serviço prestado.
+              Para quem cobra qualidade no salão, na academia ou na consulta: a
+              mesma qualidade no digital. Autoridade total, lucro no foco.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
@@ -185,15 +186,15 @@ export default function Home() {
                 style={{ filter: "drop-shadow(0 0 21px #06b6d4)" }}
               />
               <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
-                Páginas de alta conversão
+                Sites que vendem + páginas de alta conversão
               </h3>
               <p className="relative z-10 mb-5 text-zinc-300">
-                Para quem investe em divulgação: cada visita deve virar contato
-                qualificado. Mensagem enxuta, identidade visual consistente e
-                chamada clara para falar com você.
+                Você gasta com anúncio? Então precisa de página que transforme
+                visita em ligação ou WhatsApp. Objetivo claro: mais cliente na
+                agenda.
               </p>
               <span className="relative z-10 inline-block rounded bg-cyan-500/10 px-3 py-1 text-xs font-medium tracking-wide text-cyan-300 uppercase">
-                Foco em agenda e WhatsApp
+                Mais contatos · mais vendas
               </span>
             </div>
             <div className="group relative overflow-hidden rounded-xl border border-emerald-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-emerald-400/30">
@@ -202,15 +203,15 @@ export default function Home() {
                 style={{ filter: "drop-shadow(0 0 21px #34d399)" }}
               />
               <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
-                Sistema digital completo para a operação
+                Sua estrutura digital completa
               </h3>
               <p className="relative z-10 mb-5 text-zinc-300">
-                Sua vitrine institucional: história, serviços e diferenciais com
-                clareza. Transmite solidez a quem ainda não conhece e reforça
-                autoridade junto a quem já confia.
+                Site institucional que conta quem você é, o que vende e por que
+                confiar. Projeto pronto para uso — você passa segurança desde o
+                primeiro clique.
               </p>
               <span className="relative z-10 inline-block rounded bg-emerald-500/10 px-3 py-1 text-xs font-medium tracking-wide text-emerald-300 uppercase">
-                Estável, ágil e profissional
+                Profissional · confiável
               </span>
             </div>
             <div className="group relative overflow-hidden rounded-xl border border-fuchsia-400/30 bg-zinc-900/80 p-8 shadow-lg transition hover:shadow-fuchsia-400/30">
@@ -219,47 +220,47 @@ export default function Home() {
                 style={{ filter: "drop-shadow(0 0 21px #d946ef)" }}
               />
               <h3 className="relative z-10 mb-3 text-xl font-semibold text-white">
-                Sistemas inteligentes sob medida
+                Sistemas para o seu negócio
               </h3>
               <p className="relative z-10 mb-5 text-zinc-300">
-                Quando o modelo padrão não basta: fluxos, cadastros e etapas
-                alinhados à sua equipe. Projeto único, entrega fechada, titularidade
-                da sua empresa — sem vínculo mensal.
+                Tecnologia de vendas e rotina sob medida: cadastros, formulários,
+                fluxo do jeito que sua equipe trabalha. Tudo no seu nome. Sem
+                aluguel mensal.
               </p>
               <span className="relative z-10 inline-block rounded bg-fuchsia-500/10 px-3 py-1 text-xs font-medium tracking-wide text-fuchsia-300 uppercase">
-                Investimento único · liberdade financeira
+                Seu negócio no topo · pagamento único
               </span>
             </div>
           </div>
           <div className="mt-16 flex flex-col items-center">
             <div className="flex max-w-2xl flex-col items-center rounded-lg border border-cyan-400/20 bg-zinc-900/80 px-8 py-6 shadow shadow-cyan-500/10">
               <span className="mb-2 text-base font-bold tracking-wider text-cyan-400 uppercase">
-                Próximo passo
+                Vamos conversar?
               </span>
               <p className="mb-4 text-center text-zinc-200">
-                Cada negócio possui metas distintas. A proposta é construída após
-                diagnóstico de negócio ou consultoria estratégica, sem obrigação na
-                primeira conversa.
+                Cada negócio é um caso. A gente ouve, entende e propõe o melhor
+                caminho — sem pegadinha na primeira conversa.
               </p>
               <div className="flex w-full flex-col justify-center gap-4 sm:flex-row">
                 <a
-                  href={WHATSAPP_HREF}
+                  href={WHATSAPP_GERAL_HREF}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-lg bg-cyan-400 px-7 py-4 text-base font-semibold text-black shadow-sm shadow-cyan-500/40 transition-all hover:bg-cyan-300 hover:shadow-lg"
+                  className="rounded-lg bg-cyan-400 px-7 py-4 text-center text-base font-semibold text-black shadow-sm shadow-cyan-500/40 transition-all hover:bg-cyan-300 hover:shadow-lg"
                 >
-                  Consultoria estratégica
+                  WhatsApp
                 </a>
                 <a
-                  href="mailto:atendimento@agenciataonline.com.br?subject=Solicitar%20diagn%C3%B3stico%20de%20neg%C3%B3cio"
-                  className="rounded-lg border border-cyan-400 bg-zinc-950/70 px-7 py-4 text-base font-semibold text-cyan-300 transition-all hover:bg-cyan-400/10"
+                  href={WHATSAPP_ORCAMENTO_EXCLUSIVO_HREF}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg border border-cyan-400 bg-zinc-950/70 px-7 py-4 text-center text-base font-semibold text-cyan-300 transition-all hover:bg-cyan-400/10"
                 >
-                  Diagnóstico por e-mail
+                  Solicitar Orçamento Exclusivo
                 </a>
               </div>
               <div className="mt-6 text-center text-xs tracking-tight text-zinc-400 italic">
-                Pagamento único. Sem mensalidade. A solução digital é sua: liberdade
-                e controle permanente.
+                Você paga uma vez. Fica com tudo. Sem mensalidade. Sua empresa manda.
               </div>
             </div>
           </div>
@@ -269,19 +270,18 @@ export default function Home() {
       <section className="bg-surface border-white/5 border-t py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
-            Sua marca no digital no mesmo nível do seu serviço?
+            Quer mais cliente e mais lucro com imagem de respeito?
           </h2>
           <p className="mt-4 text-lg text-gray-400">
-            Fale conosco pelo WhatsApp. Alinhamos consultoria estratégica ou
-            diagnóstico de negócio conforme sua necessidade.
+            Chama no WhatsApp. Em dois toques você já está falando com a gente.
           </p>
           <a
-            href={WHATSAPP_HREF}
+            href={WHATSAPP_ORCAMENTO_EXCLUSIVO_HREF}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-cyan text-black shadow-cyan-glow hover:opacity-90 focus:ring-cyan focus:ring-offset-surface mt-8 inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold transition-all focus:ring-2 focus:ring-offset-2 focus:outline-none"
           >
-            WhatsApp — diagnóstico estratégico
+            Solicitar Orçamento Exclusivo
           </a>
         </div>
       </section>
@@ -290,28 +290,27 @@ export default function Home() {
         <div className="mx-auto max-w-6xl space-y-1 px-4 text-center text-sm text-gray-400 sm:px-6 lg:px-8">
           <p>
             © {year}{" "}
-            <span className="text-cyan font-semibold">Tá Online</span> —
-            Soluções digitais para negócios locais de alto padrão. Contato:{" "}
+            <span className="text-cyan font-semibold">Tá Online</span> — sites e
+            estrutura digital para seu negócio crescer. Contato:{" "}
             <a
-              href={WHATSAPP_HREF}
+              href={WHATSAPP_GERAL_HREF}
               target="_blank"
               rel="noopener noreferrer"
               className="text-cyan font-medium hover:underline"
             >
-              +55 11 97848-1415
+              +55 21 99852-2645
             </a>
             . Todos os direitos reservados.
           </p>
           <p className="text-xs text-gray-500">
-            Entrega única, sem mensalidade. Titularidade e liberdade na sua solução
-            digital.
+            Pagamento único. Sem mensalidade. O projeto é seu.
           </p>
         </div>
       </footer>
 
       <FloatingWhatsappBar
-        budgetUrl={WHATSAPP_BUDGET_HREF}
-        mainUrl={WHATSAPP_HREF}
+        orcamentoExclusivoHref={WHATSAPP_ORCAMENTO_EXCLUSIVO_HREF}
+        whatsappGeralHref={WHATSAPP_GERAL_HREF}
       />
     </>
   );

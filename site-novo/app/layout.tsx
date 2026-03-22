@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tá Online — Soluções digitais para negócios de alto padrão",
+  title: "Tá Online — Sites que vendem. Sem mensalidade.",
   description:
-    "Clínicas, academias, barbearias e comércios locais: autoridade online, foco em resultado e investimento único — sem mensalidade.",
+    "Mais clientes, mais lucro: sites e estrutura digital para academia, clínica, barbearia e loja. Você paga uma vez. Projeto pronto para uso.",
   icons: {
     icon: "/favicon.png",
   },
