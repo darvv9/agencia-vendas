@@ -33,7 +33,7 @@ export default function Home() {
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-300 sm:text-xl">
               Seu negócio pronto para aparecer. Aumente o lucro. Tenha autoridade
-              no mercado. Foco no dono de academia de Jiu Jitsu, clínica ou
+              no mercado. Foco no dono de academia, clínica ou
               barbearia.
             </p>
             <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
@@ -289,7 +289,7 @@ export default function Home() {
           <p>
             © {year}{" "}
             <span className="text-cyan font-semibold">Tá Online</span> — Sites
-            que vendem e soluções digitais para academia de Jiu Jitsu, clínicas e
+            que vendem e soluções digitais para academia, clínicas e
             barbearias terem autoridade real. Contato:{" "}
             <a
               href={WHATSAPP_GERAL_HREF}
@@ -297,7 +297,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-cyan font-medium hover:underline"
             >
-              +55 11 97848-1415
+              +55 11 97848-1415  
             </a>
             . Todos os direitos reservados.
           </p>
