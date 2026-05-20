@@ -3,49 +3,95 @@
 @source "../components/**/*.{js,ts,jsx,tsx}";
 
 @theme inline {
-  --color-black: #050505;
-  --color-surface: #0f0f0f;
-  --color-card: #141414;
-  --color-cyan: #00e5ff;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-primary: var(--primary);
+  --color-primary-fg: var(--primary-fg);
+  --color-accent: var(--accent);
+  --color-soft: var(--soft);
+
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
 }
 
-:root {
-  --background: #050505;
-  --foreground: #ffffff;
+:root,
+[data-theme="personal"] {
+  --bg: #f7f4ee;
+  --surface: #efe9dc;
+  --card: #ffffff;
+  --line: #e3ddd0;
+  --fg: #1a1f1c;
+  --fg-muted: #4b524d;
+  --fg-subtle: #7c8480;
+  --primary: #3a5246;
+  --primary-fg: #f7f4ee;
+  --accent: #c9a87c;
+  --soft: #d8c6a5;
+}
+
+[data-theme="advogados"] {
+  --bg: #f7f8fa;
+  --surface: #eef0f4;
+  --card: #ffffff;
+  --line: #dde1e8;
+  --fg: #0c1a2e;
+  --fg-muted: #3e4a5f;
+  --fg-subtle: #6b7588;
+  --primary: #14304f;
+  --primary-fg: #f7f8fa;
+  --accent: #b8924d;
+  --soft: #d6b573;
+}
+
+[data-theme="estetica"] {
+  --bg: #fdf8f4;
+  --surface: #f6ebe0;
+  --card: #ffffff;
+  --line: #ecdfd1;
+  --fg: #1f1611;
+  --fg-muted: #4d3d35;
+  --fg-subtle: #7f6e64;
+  --primary: #6d3d3d;
+  --primary-fg: #fdf8f4;
+  --accent: #d4a89a;
+  --soft: #c9a87c;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--bg);
+  color: var(--fg);
+  font-feature-settings: "ss01", "cv11";
 }
 
-.hero-top-gradient {
-  background:
-    radial-gradient(
-      1100px 420px at 50% -10%,
-      rgba(0, 229, 255, 0.22) 0%,
-      rgba(0, 229, 255, 0.08) 35%,
-      rgba(0, 229, 255, 0) 70%
-    ),
-    radial-gradient(
-      900px 360px at 50% 10%,
-      rgba(255, 255, 255, 0.06) 0%,
-      rgba(255, 255, 255, 0) 55%
-    ),
-    linear-gradient(180deg, #121212 0%, #050505 62%, #050505 100%);
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.logo-header {
-  height: clamp(80px, 7vw, 180px);
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
-  display: block;
-  background: transparent;
-  filter: drop-shadow(0 0 18px rgba(0, 229, 255, 0.18));
+.fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-.shadow-cyan-glow {
-  box-shadow: 0 0 20px rgba(0, 229, 255, 0.35);
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .fade-up {
+    animation: none;
+  }
 }
