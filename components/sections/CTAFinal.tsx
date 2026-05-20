@@ -50,7 +50,7 @@ export function CTAFinal({ content }: Props) {
             </Button>
           </div>
           <p className="text-fg-subtle mt-5 text-sm">
-            Resposta rápida. Sem compromisso.
+            Resposta rápida e sem compromisso.
           </p>
         </div>
       </Container>

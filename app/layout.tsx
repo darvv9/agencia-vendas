@@ -71,7 +71,6 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  icons: { icon: "/favicon.png" },
   formatDetection: { email: false, telephone: false, address: false },
 };
 

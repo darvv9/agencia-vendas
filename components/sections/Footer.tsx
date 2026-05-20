@@ -1,4 +1,5 @@
 import { Container } from "@/components/ui/Container";
+import { Logo } from "@/components/ui/Logo";
 import { whatsappUrl } from "@/lib/whatsapp";
 import { SITE } from "@/lib/site";
 import type { NicheContent } from "@/lib/content/types";
@@ -16,12 +17,11 @@ export function Footer({ content }: Props) {
       <Container>
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <p className="font-display text-fg text-2xl tracking-tight">
-              tá <span className="text-primary">online</span>.
-            </p>
-            <p className="text-fg-muted mt-3 max-w-sm text-sm leading-relaxed">
-              Agência de Niterói. Cuidamos do site inteiro: domínio,
-              hospedagem, suporte e alterações.
+            <Logo size="lg" />
+            <p className="text-fg-muted mt-4 max-w-sm text-sm leading-relaxed">
+              Agência de Niterói especializada em sites profissionais para
+              pequenos negócios da região. Cuidamos de todo o ambiente
+              técnico — domínio, hospedagem, suporte e alterações.
             </p>
             <p className="text-fg-subtle mt-3 text-sm">
               Atendemos {SITE.areaServed.slice(0, -1).join(", ")} e{" "}

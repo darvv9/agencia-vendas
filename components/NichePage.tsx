@@ -6,6 +6,7 @@ import { Footer } from "@/components/sections/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { Investimento } from "@/components/sections/Investimento";
 import { Portfolio } from "@/components/sections/Portfolio";
+import { SiteHeader } from "@/components/sections/SiteHeader";
 import { Sobre } from "@/components/sections/Sobre";
 import { Solucao } from "@/components/sections/Solucao";
 import { FloatingWhatsappBar } from "@/components/FloatingWhatsappBar";
@@ -21,6 +22,7 @@ export function NichePage({ content }: Props) {
   const jsonLd = buildJsonLd(content);
   return (
     <div data-theme={content.niche} className="bg-bg text-fg min-h-screen">
+      <SiteHeader />
       <main>
         <Hero content={content} />
         <Dores content={content} />

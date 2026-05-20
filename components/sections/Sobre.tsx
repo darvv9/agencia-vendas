@@ -1,4 +1,5 @@
 import { Container } from "@/components/ui/Container";
+import { Logo } from "@/components/ui/Logo";
 import { Section } from "@/components/ui/Section";
 import type { NicheContent } from "@/lib/content/types";
 
@@ -14,21 +15,19 @@ export function Sobre({ content }: Props) {
     <Section ariaLabel="Sobre">
       <Container>
         <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-[auto_1fr] md:gap-14">
-          {/* avatar placeholder */}
+          {/* avatar placeholder — substituir por <Image src="/sobre.jpg" ... /> quando a foto chegar */}
           <div
             aria-hidden
-            className="border-line from-surface to-card relative mx-auto h-32 w-32 shrink-0 overflow-hidden rounded-full border-2 bg-gradient-to-br shadow-inner sm:h-40 sm:w-40 md:h-48 md:w-48"
+            className="border-line bg-surface relative mx-auto flex h-40 w-40 shrink-0 items-center justify-center overflow-hidden rounded-full border shadow-inner sm:h-44 sm:w-44 md:h-48 md:w-48"
           >
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  "radial-gradient(circle at 50% 35%, color-mix(in oklab, var(--accent) 60%, transparent) 0%, transparent 65%)",
+                  "radial-gradient(circle at 50% 30%, color-mix(in oklab, var(--accent) 55%, transparent) 0%, transparent 75%)",
               }}
             />
-            <div className="font-display text-fg-subtle/60 absolute inset-0 flex items-center justify-center text-5xl tracking-tight">
-              tá.
-            </div>
+            <Logo size="lg" className="relative" />
           </div>
 
           <div className="text-center md:text-left">
