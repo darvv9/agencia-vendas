@@ -169,39 +169,22 @@ Tudo está em `lib/content/<nicho>.ts` seguindo o tipo `NicheContent`. O compone
 |---|---|---|
 | `38fd775` | Etapa 1 — Scaffold (fundação + componentes) | ✅ commitado |
 | `4b1e651` | Etapa 2 — Página `/` (personal) + branding (Logo + favicon + SiteHeader) | ✅ commitado |
-| pendente | Etapa 3 — Página `/advogados` (arquivos criados, **aguardando OK do usuário pra commitar**) | 🟡 em revisão |
-| pendente | Etapa 4 — Página `/estetica` (**ainda não escrita**) | 🔴 to-do |
-| pendente | Etapa 5 — lint + build + resumo final | 🔴 to-do |
+| `4e23efd` | Etapa 3 — Página `/advogados` (copy do nicho jurídico) | ✅ commitado |
+| `205e1e2` | Fix avulso — `SiteHeader` usa `next/link` no logo (eliminou warn `@next/next/no-html-link-for-pages`) | ✅ commitado |
+| `5b9c078` | Etapa 4 — Página `/estetica` (copy do nicho de clínicas) | ✅ commitado |
+| —        | Etapa 5 — lint ✓, build ✓ (3 rotas estáticas: `/`, `/advogados`, `/estetica`) | ✅ verificado |
 
 ### Próximo passo concreto
 
-1. Aguardar OK do usuário pra commitar Etapa 3 (advogados). Quando der OK:
-   ```
-   git add -A
-   # commit msg via arquivo temporário (heredoc não funciona em PowerShell)
-   git commit -F .git/COMMIT_MSG_TMP
-   ```
-   Sugestão de mensagem: `feat(advogados): pagina /advogados com copy do nicho juridico`
+As 3 páginas estão no ar (em build local), commitadas separadamente e prontas. **Branch `main` está 6 commits à frente de `origin/main` — não foi feito push** (esperar o usuário pedir).
 
-2. Escrever `lib/content/estetica.ts` seguindo o mesmo padrão (tipo `NicheContent`). Adaptações específicas:
-   - Tom: próximo, "você", calor + profissionalismo. Trata como empreendedora competente.
-   - Preços `personal`: R$ 1.997 setup, 3x R$ 697, R$ 147/mês.
-   - Dores específicas:
-     - "Você aparece no Google quando alguém busca 'clínica de estética em [bairro]'?"
-     - "Seu Instagram está bonito, mas o agendamento não cai no WhatsApp?"
-     - "Site velho ou inexistente passa a sensação que a clínica não é profissional?"
-   - Imagens placeholder (futuras): spa, skincare, atendimento em clínica.
-   - Mensagem WhatsApp principal: `"Olá! Quero um site para a minha clínica de estética."`
-   - Footer crossSell links: `/` (Personal trainers e studios) e `/advogados` (Advogados em Niterói).
-   - Mockups portfolio (2): nomes fictícios apropriados — sugestão "Estúdio Lume Clínica Estética" + "Aline Faria Estética Avançada".
+O que falta — **dependente de ativos do usuário, não de código**:
 
-3. Criar `app/estetica/page.tsx` (copiar estrutura de `app/advogados/page.tsx`, trocar imports).
-
-4. `npm run lint && npm run build` — confirmar verde.
-
-5. Commitar Etapa 4: `feat(estetica): pagina /estetica com copy do nicho de clinicas`.
-
-6. Resumo final pro usuário: listar URLs, screenshots/descrições, TODOs pendentes (substituir mockups portfólio por demos reais, plugar foto da seção Sobre, gerar `apple-icon.png` se quiser cobrir iOS antigo).
+1. **Foto da seção Sobre** — substituir o bloco de placeholder em `components/sections/Sobre.tsx` por `<Image src="/sobre.jpg" ... />` quando a foto chegar.
+2. **Links reais do Portfolio** — quando os 6 demos forem ao ar (2 por nicho), trocar `href: null` em `lib/content/<nicho>.ts → portfolio.demos[i].href` pela URL real.
+3. **`apple-icon.png`** (opcional) — gerar a partir de `app/icon.svg` se quiser cobrir iOS antigo (Next 16 não aceita SVG pra apple-icon — testado).
+4. **`public/favicon.png`** (671KB, não referenciado) — pode deletar manualmente.
+5. **`git push`** quando o usuário aprovar mandar pro `origin/main`.
 
 ---
 
